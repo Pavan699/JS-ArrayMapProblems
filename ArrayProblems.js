@@ -46,3 +46,16 @@ for (let i = 2; i <= num; i++) //for loop for the calculating factors
 }
 //for loop for Printing the factors
 console.log("Factors are : "+factors)
+
+
+//Print the Repeated Numbers from 1-100 and put numbers into an array
+const RepeatedNums = new Array();
+
+for (let i=1 ; i<=100; i=i+1)
+{ 
+    if ((i%11) == 0 )
+    {
+        RepeatedNums.push(i);
+    }
+}
+console.log("Repeated Numbers are : "+RepeatedNums);
