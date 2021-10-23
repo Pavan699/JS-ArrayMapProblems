@@ -29,3 +29,20 @@ let SortNums = Numbers.sort();
 console.log("Sorted Array : "+SortNums);
 console.log("The 2nd Smallest Number is : "+SortNums[1]);
 console.log("The 2nd Largest Number is : "+SortNums[8]);
+
+//Prime Factor Problem
+//Declaration of Array
+let factors = new Array();
+
+let num = 57;//Number to find the prime factors
+console.log("Number to print prime factor is : "+num)
+for (let i = 2; i <= num; i++) //for loop for the calculating factors
+{
+  while (num % i == 0) 
+  {
+    factors.push(i);
+    num /= i;
+  }
+}
+//for loop for Printing the factors
+console.log("Factors are : "+factors)
